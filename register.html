@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css\style.css">
+  <script type="text/javascript" src="js\form.js"></script>
+  <title>Register</title>
+
+  <style type="text/css">
+    body {
+      background-image: url("images/darkenergy.jpg");
+    }
+    .container{
+      background: #fff;
+      width: 700px;
+      margin: 30px auto;
+      border: 1px solid black;
+      padding: 15px;
+    }
+    .container form{
+      color: #999;
+      border-radius: 3px;
+      margin-bottom: 15px;
+      background: #fff;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+    }
+    .h1{
+      text-align: center;
+    }
+    .row{
+      height: 56px;
+    }
+  </style>
+</head>
+
+<body>
+ <div class="container">
+  <h1>Sign Up</h1>
+  <hr>
+  <form action="" id="regis" method="POST">
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="control-label" for="uname">User Name:</label>
+      </div>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="uname" name="username" placeholder="User name.." required="required">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="control-label" for="email">Email:</label>
+      </div>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="email" name="email" placeholder="Email.." required="required">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label for="pwd">Password:</label>
+      </div>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="pwd" name="password" placeholder="Your password.." required="required">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3">
+        <label class="control-label" for="fname">Confirm Password:</label>
+      </div>
+      <div class="col-lg-9">
+        <input type="text" class="form-control" id="cpwd" name="confirm_password" placeholder="Confirm Password..." required="required">
+      </div>
+    </div>
+
+    <br>
+    <div class="col">
+      <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
+    </div>
+
+    
+  </form>
+</div>
+</body>
+
+</html>
