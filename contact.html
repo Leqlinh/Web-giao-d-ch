@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.8.1-web/css/all.css">
+	
+</head>
+<body>
+	<section class="contact-banner">
+		<div class="container">
+			<a href="homepage.html">Home</a>
+		</div>
+	</section>
+
+
+
+	    	<div class="">
+				
+				<!--Contact Section Start-->
+				<section class="contact-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<!--Contact Info Holder Start-->
+								<div class="contact-info">
+									<h3>We are Here to Help You </h3>
+									<p></p>
+								</div><!--Contact Info Holder End-->
+								<!--Contact Form Start-->
+								<form action="#">
+									<div class="form-group">
+										<input type="text" placeholder="Họ tên" class="form-control">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Email" class="form-control">
+									</div>
+									<div class="form-group">
+										<input type="text" placeholder="Số điện thoại" class="form-control">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" name="message" rows="5" placeholder="Nội dung yêu cầu"></textarea>
+									</div>
+									<button class="btn btn-primary" type="button">Gửi</button>
+								</form>
+							</div>
+							<div class="col-md-6">
+								<!--Contact US Map Start-->
+								<div id="googleMap" style="width:100%;height:400px;"></div>
+								<ul>
+									<li>
+										<i class="fas fa-twitter" aria-hidden="true"></i>
+										<a href="tel:+381114074821">+381 (0)11 407 4821</a>
+									</li>
+									<li>
+										<i class="fa fa-envelope-o" aria-hidden="true"></i>
+										<a href="mailto:ant.estate.rs@gmail.com">ant.estate.rs@gmail.com</a>
+									</li>
+								</ul>
+								<!--Contact US Map End-->
+							</div>
+						</div>
+					</div>
+				</section><!--Contact Section End-->
+	    			
+	    	</div><!--Main Content End-->
+
+	    	<section id="footer"></section>
+
+	    </div>
+
+	<script>
+		function myMap() {
+		var mapProp= {
+		  center:new google.maps.LatLng(51.508742,-0.120850),
+		  zoom:5,
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+	</script>
+
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+</body>
+</html>
